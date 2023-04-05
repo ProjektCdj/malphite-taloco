@@ -1,0 +1,193 @@
+@font-face {
+    src: url(Fonts_Package/Fonts_Package/Spiegel-TTF/Spiegel_TT_Regular.ttf);
+    font-family: 'Spiegel_TT_Regular';
+    src: url(Fonts_Package/Fonts_Package/BeaufortForLoL-TTF/BeaufortforLOL-Bold.ttf);
+    font-family: 'BeaufortforLOL-Bold';
+    
+}
+
+ :root{
+    --cor-textofundo : #010A13;
+    --cor-infoimportante1 : #F0E6D2;
+    --cor-infoimportante2 : #C8AA6E;
+    --cor-infoimportante4 : #C89B3C;
+    --cor-chamaatencao2 : #0AC8B9;
+    --cor-textos1 : #A09B8C;;
+    --cor-fundo : #1E282D;
+    --cor-hover : #1E282D;
+
+    --fonte-titulo : 'BeaufortforLOL-Bold'; 
+    --fonte-texto : 'Spiegel_TT_Regular';
+
+ }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-fundo);
+    color: var(--cor-infoimportante1);
+}
+
+.cabecalho{
+     padding: 2% 0% 0% 4%;
+    
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho__menu__link{
+    font-family: var(--fonte-titulo);
+    font-size: 1.35rem;
+    font-weight: 50;
+    color: var(--cor-infoimportante1);
+    text-decoration: none;
+    
+}
+
+
+
+.apresentacao {
+    padding: 6% 15.3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.5rem;
+    font-family: var(--fonte-titulo) ;
+    color: var(--cor-infoimportante2);
+
+}
+
+.destaque-titulo {
+    color: var(--cor-infoimportante4);
+    font-family: var(--fonte-titulo);
+
+}
+
+.gif__apresentacao__malfite {
+    border: 2px solid var(--cor-infoimportante2);
+    border-radius: 3px;
+    width: 45%;
+
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.43rem;
+    font-family: 'Spiegel_TT_Regular';
+    color: var();
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 32px;
+
+}
+
+.apresentacao__links__subtitulo{
+    font-family: var(--fonte-titulo);
+    font-size: 1.75rem  ;
+    font-weight: 100;
+    color: var(--cor-infoimportante2);
+}
+
+.apresentacao__links__navegacao {
+    background-color : var(--cor-textofundo);
+    display: flex;
+    justify-content: center;
+    width: 19%;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: var(--fonte-titulo);
+    padding: 20px 0px;
+    color: var(--cor-infoimportante4);
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px groove var(--cor-chamaatencao2);
+    gap: 0px;
+}
+
+.imagens__links_link{
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    padding: 0px 2px;
+
+}
+
+.apresentacao__links__navegacao:hover {
+    background-color: var(--cor-hover);
+    padding: 2.8%;
+}
+
+.rodape{
+
+    background-color: var(--cor-textos1);
+    margin-top: 18%;
+    padding: 2.5%;
+    text-align: center;
+    font-family: 'Spiegel_TT_Regular';
+    font-weight: 400;
+    font-size: 0.93rem;
+    color: var(--cor-textofundo);
+}
+
+.apresentacao__conteudo__titulo__pagina2{
+    color: var(--cor-infoimportante4);
+    font-size: 2.5rem;
+    font-family: var(--fonte-titulo);
+}
+
+.video_do_malphite{
+    border: 1px solid var(--cor-infoimportante4);
+    border-radius: 3px;
+}
+
+@media (max-width: 1300px) {
+    
+    .cabecalho {
+        padding: 5%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .imagens__links_link{
+        width: 20%;
+    }
+
+    .video_do_malphite{
+        width: auto;
+    }
+}
